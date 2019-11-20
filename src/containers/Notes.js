@@ -86,6 +86,10 @@ async function handleSubmit(event) {
   }
 }
 
+async function deleteNote() {
+  return API.del("notes", `/notes/${props.match.params.id}`);
+}
+
 async function handleDelete(event) {
   event.preventDefault();
 
@@ -98,6 +102,14 @@ async function handleDelete(event) {
   }
 
   setIsDeleting(true);
+
+  try {
+    await deleteNote();
+    props.history.push("/");
+  } catch (e) {
+    alert(e);
+    setIsDeleting(false);
+  }
 }
 
 return (
