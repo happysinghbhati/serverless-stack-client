@@ -31,5 +31,21 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/happysinghbhati/serverless-stack-client.git"
+  },
+  "keywords": [
+    "app",
+    "client"
+  ],
+  "author": "Happy Bhati",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/happysinghbhati/serverless-stack-client/issues"
+  },
+  "homepage": "https://github.com/happysinghbhati/serverless-stack-client#readme"
 }
