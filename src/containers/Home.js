@@ -55,7 +55,7 @@ function renderNotesList(notes) {
   function renderLander() {
     return (
       <div className="lander">
-        <h1>Scratch</h1>
+        <h1>Bricks</h1>
         <p>A simple note taking app</p>
       </div>
     );
