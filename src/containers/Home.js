@@ -3,6 +3,7 @@ import { PageHeader, ListGroup, ListGroupItem } from "react-bootstrap";
 import "./Home.css";
 import { API } from "aws-amplify";
 import { LinkContainer } from "react-router-bootstrap";
+import { Link } from "react-router-dom";
 
 export default function Home(props) {
   const [notes, setNotes] = useState([]);
@@ -52,14 +53,22 @@ function renderNotesList(notes) {
 }
   
 
-  function renderLander() {
-    return (
-      <div className="lander">
-        <h1>Bricks</h1>
-        <p>A simple note taking app</p>
+function renderLander() {
+  return (
+    <div className="lander">
+      <h1>Bricks</h1>
+      <p>A simple note taking app</p>
+      <div>
+        <Link to="/login" className="btn btn-info btn-lg">
+          Login
+        </Link>
+        <Link to="/signup" className="btn btn-success btn-lg">
+          Signup
+        </Link>
       </div>
-    );
-  }
+    </div>
+  );
+}
 
   function renderNotes() {
     return (
